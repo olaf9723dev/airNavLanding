@@ -77,12 +77,18 @@ const ContactUs = () => {
                 <div className='flex flex-col gap-1.5'>
                   <Typography className='font-medium text-white'>Let&apos;s contact with us</Typography>
                   <Typography variant='h4' className='text-white'>
-                    Join us in transforming the airport experience.​
+                    Let’s Make Airports Less Stressful – Together
                   </Typography>
                 </div>
                 <img src='/images/front-pages/landing-page/chat.png' alt='chat' className='is-full' />
                 <Typography className='text-white'>
-                  Check out our funding opportunity at <a href='https://indiegogo.com'>https://indiegogo.com</a>
+                  Help us bring AirNav to life and revolutionize how the world travels. With your support, getting
+                  around the airport will be as easy as checking your phone.
+                </Typography>
+                <Typography className='text-white'>
+                  👉 Back us today and be part of the future of smarter, stress-free travel. Check out our funding
+                  opportunity at
+                  <a href='https://indiegogo.com'>https://indiegogo.com</a>
                 </Typography>
               </CardContent>
             </Card>

@@ -33,17 +33,21 @@ const Team = () => {
             <Typography color='primary' className='font-bold text-[32px]'>
               Development Team
             </Typography>
-            <Typography className='font-medium' color='text.secondary'>
-              https://prowebtechnologies.com
-            </Typography>
+            <Link href={'https://prowebtechnologies.com'} target='_blank'>
+              <Typography className='font-medium' color='text.secondary'>
+                https://prowebtechnologies.com
+              </Typography>
+            </Link>
           </div>
         </div>
         <div className='flex pbs-4 lg:pbs-[60px] md:pie-4 z-[1]'>
-          <img
-            src='/images/front-pages/landing-page/team_logo.png'
-            alt='dashboard-image'
-            className='max-is-[600px] is-full'
-          />
+          <Link href={'https://prowebtechnologies.com'} target='_blank'>
+            <img
+              src='/images/front-pages/landing-page/team_logo.png'
+              alt='dashboard-image'
+              className='max-is-[600px] is-full'
+            />
+          </Link>
         </div>
       </div>
     </section>

@@ -156,26 +156,21 @@ const Footer = () => {
             <span>{`© ${new Date().getFullYear()}, Made with `}</span>
             <span>{`❤️`}</span>
             <span>{` by `}</span>
-            <Link href='https://themeselection.com' target='_blank' className='font-medium text-white'>
+            <Link href='https://prowebtechnologies.com' target='_blank' className='font-medium text-white'>
               Prowebtechnologies
             </Link>
           </Typography>
           <div className='flex gap-6 items-center'>
-            <IconButton component={Link} size='small' href='https://github.com/themeselection' target='_blank'>
+            <IconButton component={Link} size='small' href='https://github.com/' target='_blank'>
               <i className='ri-github-fill text-white text-lg' />
             </IconButton>
-            <IconButton component={Link} size='small' href='https://www.facebook.com/ThemeSelections/' target='_blank'>
+            <IconButton component={Link} size='small' href='https://www.facebook.com/' target='_blank'>
               <i className='ri-facebook-fill text-white text-lg' />
             </IconButton>
-            <IconButton component={Link} size='small' href='https://twitter.com/Theme_Selection' target='_blank'>
+            <IconButton component={Link} size='small' href='https://twitter.com/' target='_blank'>
               <i className='ri-twitter-fill text-white text-lg' />
             </IconButton>
-            <IconButton
-              component={Link}
-              size='small'
-              href='https://in.linkedin.com/company/themeselection'
-              target='_blank'
-            >
+            <IconButton component={Link} size='small' href='https://in.linkedin.com/company/' target='_blank'>
               <i className='ri-linkedin-fill text-white text-lg' />
             </IconButton>
           </div>

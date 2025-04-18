@@ -42,12 +42,8 @@ const LandingPageWrapper = ({ mode }: { mode: Mode }) => {
       <HeroSection mode={mode} />
       <Opportunity />
       <Features />
-      <Revenue />
+      <Pricing />
       <Advantage />
-      <Strategy />
-      <Timeline />
-      <ProductStat />
-      <Funding />
       <Team />
       <ContactUs />
     </>

@@ -81,26 +81,11 @@ const HeroSection = ({ mode }: { mode: Mode }) => {
           <Typography className='font-medium' color='text.primary'>
             The Ultimate Airport Navigation App – Built for Travelers, Backed by You.​
           </Typography>
+          <Typography className='font-medium' color='text.primary'>
+            AirNav is a mobile app for iOS and Android that turns airports into walkable, navigable maps—just like
+            Google Maps does for cities.
+          </Typography>
         </div>
-      </div>
-      <div
-        className={classnames('relative text-center', frontCommonStyles.layoutSpacing)}
-        style={{
-          transform: isAboveLgScreen ? `translate(${dashboardPosition.x}px, ${dashboardPosition.y}px)` : 'none'
-        }}
-      >
-        <Link href='/' target='_blank'>
-          <img src={dashboardImage} alt='dashboard-image' className={classnames('mli-auto', styles.heroSecDashboard)} />
-          <div className={classnames('absolute', styles.heroSectionElements)}>
-            <img
-              src={elementsImage}
-              alt='dashboard-elements'
-              style={{
-                transform: isAboveLgScreen ? `translate(${elementsPosition.x}px, ${elementsPosition.y}px)` : 'none'
-              }}
-            />
-          </div>
-        </Link>
       </div>
     </section>
   )

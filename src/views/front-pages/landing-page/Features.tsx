@@ -1,22 +1,59 @@
 // React Imports
 import { useEffect, useRef } from 'react'
-
 // MUI Imports
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
-
+import Accordion from '@mui/material/Accordion'
+import AccordionSummary from '@mui/material/AccordionSummary'
+import AccordionDetails from '@mui/material/AccordionDetails'
 // Third-party Imports
 import classnames from 'classnames'
-
 // Hook Imports
 import { useIntersection } from '@/hooks/useIntersection'
-
 // Styles Imports
 import frontCommonStyles from '@views/front-pages/styles.module.css'
-
 // SVG Imports
-import ElementOne from '@/assets/svg/front-pages/landing-page/ElementOne'
 import Lines from '@assets/svg/front-pages/landing-page/Lines'
+
+type FeatureDataTypes = {
+  id: string
+  title: string
+  active?: boolean
+  description: string
+}
+
+const FeatureData: FeatureDataTypes[] = [
+  {
+    id: 'panel1',
+    title: 'Turn-by-Turn Airport Navigation',
+    description:
+      'Search and navigate to gates, restrooms, customs, lounges, ticket counters, baggage claim, restaurants, and more—with step-by-step walking directions, distance, and estimated time.'
+  },
+  {
+    id: 'panel2',
+    title: 'Search Anything Inside the Airport',
+    active: true,
+    description:
+      'Type in “Gate C19,” “Starbucks,” “Delta check-in,” or “Baggage Claim,” and instantly find where it is and how to get there.'
+  },
+  {
+    id: 'panel3',
+    title: 'Live Flight Tracking & Alerts',
+    description:
+      'Integrate your itinerary to get real-time arrival/departure updates, delays, and gate changes—no more scrambling for screens or missing announcements.'
+  },
+  {
+    id: 'panel4',
+    title: 'Transportation Integrations',
+    description: 'Book a taxi, Uber, or rental car from the app once you land—no jumping between multiple apps.'
+  },
+  {
+    id: 'panel5',
+    title: 'Full Itinerary Sync',
+    description:
+      'Input your trip details and AirNav will automatically guide you through each airport in your journey—from departure to layovers to final arrival.'
+  }
+]
 
 const Features = () => {
   // Refs
@@ -51,6 +88,7 @@ const Features = () => {
     >
       <div className='flex flex-col items-center justify-center'>
         <div className='flex items-baseline flex-wrap gap-2 mbe-3 sm:mbe-1'>
+          <Lines />
           <Typography variant='h4' className='font-bold'>
             Key Features
           </Typography>
@@ -64,20 +102,16 @@ const Features = () => {
           <img src='/images/front-pages/landing-page/feature.png' style={{ borderRadius: '25px' }} />
         </Grid>
         <Grid item xs={12} lg={6}>
-          <div className='flex flex-col items-left justify-center'>
-            <Typography className='my-7' variant='h5'>
-              Search gates, restrooms, stores, ticket counters, customs, lounges​
-            </Typography>
-            <Typography className='my-7' variant='h5'>
-              Real-time indoor navigation with walking distance and estimated time​​
-            </Typography>
-            <Typography className='my-7' variant='h5'>
-              Live flight tracking, gate change notifications, and itinerary integration​​
-            </Typography>
-            <Typography className='my-7' variant='h5'>
-              Integration with rideshare and rental car services​​
-            </Typography>
-          </div>
+          {FeatureData.map((data, index) => {
+            return (
+              <Accordion key={index} defaultExpanded={data.active}>
+                <AccordionSummary aria-controls={data.id + '-content'} id={data.id + '-header'}>
+                  {data.title}
+                </AccordionSummary>
+                <AccordionDetails>{data.description}</AccordionDetails>
+              </Accordion>
+            )
+          })}
         </Grid>
       </Grid>
     </section>
