@@ -52,14 +52,14 @@ const Header = ({ mode }: { mode: Mode }) => {
                 <i className='ri-menu-line text-textPrimary' />
               </IconButton>
               <Link href='/front-pages/landing-page'>
-                <Logo mode={mode} />
+                <Logo />
               </Link>
               <FrontMenu mode={mode} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
             </div>
           ) : (
             <div className='flex items-center gap-10'>
               <Link href='/front-pages/landing-page'>
-                <Logo mode={mode} />
+                <Logo />
               </Link>
               <FrontMenu mode={mode} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
             </div>

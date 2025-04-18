@@ -16,7 +16,7 @@ import frontCommonStyles from '@views/front-pages/styles.module.css'
 
 const Team = () => {
   return (
-    <section className='relative py-5'>
+    <section id='team' className='relative py-5'>
       <img
         src='/images/front-pages/landing-page/get-started-bg.png'
         alt='background-image'

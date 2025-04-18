@@ -23,6 +23,7 @@ import { useSettings } from '@core/hooks/useSettings'
 import Advantage from './Advantage​'
 import Timeline from './Timeline'
 import Team from './Team'
+import Funding from './Funding'
 
 const LandingPageWrapper = ({ mode }: { mode: Mode }) => {
   // Hooks
@@ -46,7 +47,7 @@ const LandingPageWrapper = ({ mode }: { mode: Mode }) => {
       <Strategy />
       <Timeline />
       <ProductStat />
-      <Faqs />
+      <Funding />
       <Team />
       <ContactUs />
     </>
