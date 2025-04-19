@@ -99,7 +99,11 @@ const Features = () => {
       </div>
       <Grid container spacing={6} className='py-auto'>
         <Grid item xs={12} lg={6} className='text-center'>
-          <img src='/images/front-pages/landing-page/feature.png' style={{ borderRadius: '25px' }} />
+          <img
+            src='/images/front-pages/landing-page/feature.png'
+            style={{ borderRadius: '25px', margin: 'auto' }}
+            className='is-[80%] max-is-[320px]'
+          />
         </Grid>
         <Grid item xs={12} lg={6}>
           {FeatureData.map((data, index) => {

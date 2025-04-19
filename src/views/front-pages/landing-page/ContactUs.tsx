@@ -87,7 +87,7 @@ const ContactUs = () => {
                 </Typography>
                 <Typography className='text-white'>
                   👉 Back us today and be part of the future of smarter, stress-free travel. Check out our funding
-                  opportunity at
+                  opportunity at &nbsp;
                   <a href='https://indiegogo.com'>https://indiegogo.com</a>
                 </Typography>
               </CardContent>

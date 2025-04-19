@@ -24,6 +24,7 @@ import Advantage from './Advantage​'
 import Timeline from './Timeline'
 import Team from './Team'
 import Funding from './Funding'
+import Problem from './Problem'
 
 const LandingPageWrapper = ({ mode }: { mode: Mode }) => {
   // Hooks
@@ -41,9 +42,9 @@ const LandingPageWrapper = ({ mode }: { mode: Mode }) => {
     <>
       <HeroSection mode={mode} />
       <Opportunity />
+      <Problem />
       <Features />
       <Pricing />
-      <Advantage />
       <Team />
       <ContactUs />
     </>

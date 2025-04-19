@@ -13,7 +13,7 @@ interface LogoProps extends ImgHTMLAttributes<HTMLImageElement> {
 const Logo = ({ mode, ...rest }: LogoProps) => {
   const logoSrc = '/images/logos/dark-logo.png'
 
-  return <img src={logoSrc} alt='Logo' width={60} height={60} {...rest} />
+  return <img src={logoSrc} alt='Logo' width={80} height={80} {...rest} />
 }
 
 export default Logo

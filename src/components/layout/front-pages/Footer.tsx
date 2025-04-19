@@ -63,52 +63,23 @@ const Footer = () => {
                 </div>
               </div>
             </Grid>
-            {/* <Grid item xs={12} sm={3} lg={2}>
+
+            <Grid item xs={12} sm={3} lg={2}>
               <Typography color='white' className='font-medium mbe-6 opacity-[0.92]'>
-                Pages
+                Contact us
               </Typography>
               <div className='flex flex-col gap-4'>
-                <Typography component={Link} href='/front-pages/pricing' color='white' className='opacity-[0.78]'>
-                  Pricing
+                <Typography color='white' className='opacity-[0.78]'>
+                  CEO@airnav.app
                 </Typography>
-                <Link href='/front-pages/payment' className='flex items-center gap-[10px]'>
-                  <Typography color='white' className='opacity-[0.78]'>
-                    Payment
-                  </Typography>
-                  <Chip label='New' color='primary' size='small' />
-                </Link>
-                <Typography
-                  component={Link}
-                  href='/pages/misc/under-maintenance'
-                  color='white'
-                  className='opacity-[0.78]'
-                >
-                  Maintenance
+                <Typography color='white' className='opacity-[0.78]'>
+                  hello@airnav.com
                 </Typography>
-                <Typography component={Link} href='/pages/misc/coming-soon' color='white' className='opacity-[0.78]'>
-                  Coming Soon
+                <Typography color='white' className='opacity-[0.78]'>
+                  support@airnav.com
                 </Typography>
               </div>
             </Grid>
-            <Grid item xs={12} sm={3} lg={2}>
-              <Typography color='white' className='font-medium mbe-6 opacity-[0.92]'>
-                Products
-              </Typography>
-              <div className='flex flex-col gap-4'>
-                <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[0.78]'>
-                  Page builder
-                </Typography>
-                <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[0.78]'>
-                  Admin Dashboards
-                </Typography>
-                <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[0.78]'>
-                  UI Kits
-                </Typography>
-                <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[0.78]'>
-                  Illustrations
-                </Typography>
-              </div>
-            </Grid> */}
             <Grid item xs={12} sm={6} lg={3}>
               <Typography color='white' className='font-medium mbe-6 opacity-[0.92]'>
                 Download our App
