@@ -50,7 +50,7 @@ const Problem = () => {
 
   return (
     <section
-      id='advantage'
+      id='problem'
       ref={ref}
       className={classnames('flex flex-col gap-16 plb-[100px]', frontCommonStyles.layoutSpacing)}
     >

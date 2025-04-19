@@ -131,7 +131,7 @@ const FrontMenu = (props: Props) => {
         })}
         color='text.primary'
       >
-        Advantage
+        Problem
       </Typography>
       <Typography
         component={Link}
