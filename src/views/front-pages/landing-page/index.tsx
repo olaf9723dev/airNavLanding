@@ -44,7 +44,7 @@ const LandingPageWrapper = ({ mode }: { mode: Mode }) => {
       <Opportunity />
       <Problem />
       <Features />
-      <Pricing />
+      {/* <Pricing /> */}
       <Team />
       <ContactUs />
     </>
