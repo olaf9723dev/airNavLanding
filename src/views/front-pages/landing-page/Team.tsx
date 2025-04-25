@@ -3,13 +3,9 @@ import Link from 'next/link'
 
 // MUI Imports
 import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
 
 // Third-party Imports
 import classnames from 'classnames'
-
-// Component Imports
-import DirectionalIcon from '@components/DirectionalIcon'
 
 // Styles Imports
 import frontCommonStyles from '@views/front-pages/styles.module.css'

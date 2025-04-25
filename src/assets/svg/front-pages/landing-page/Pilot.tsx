@@ -223,4 +223,5 @@ const Pilot = (props: SVGAttributes<SVGElement>) => {
     </svg>
   )
 }
+
 export default Pilot

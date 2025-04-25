@@ -21,7 +21,6 @@ import Lines from '@assets/svg/front-pages/landing-page/Lines'
 
 // Styles Imports
 import frontCommonStyles from '@views/front-pages/styles.module.css'
-import Link from 'next/link'
 
 const ContactUs = () => {
   // Refs

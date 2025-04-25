@@ -11,13 +11,11 @@ import classnames from 'classnames'
 // Hook Imports
 import { useIntersection } from '@/hooks/useIntersection'
 
-// SVG Imports
-import Lines from '@assets/svg/front-pages/landing-page/Lines'
-
 import AirPlane from '@/assets/svg/front-pages/landing-page/AirPlanes'
 import Pilot from '@/assets/svg/front-pages/landing-page/Pilot'
 import Bag from '@/assets/svg/front-pages/landing-page/Bag'
 import Money from '@/assets/svg/front-pages/landing-page/Money'
+
 // Styles Imports
 import styles from './styles.module.css'
 import frontCommonStyles from '@views/front-pages/styles.module.css'

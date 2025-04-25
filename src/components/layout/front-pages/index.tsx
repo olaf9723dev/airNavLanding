@@ -14,6 +14,7 @@ import { frontLayoutClasses } from '@layouts/utils/layoutClasses'
 const FrontLayout = ({ children }: ChildrenType) => {
   // Vars
   const mode = getServerMode()
+
   return (
     <div className={frontLayoutClasses.root}>
       <Header mode={mode} />

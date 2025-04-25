@@ -13,12 +13,6 @@ import type { VerticalNavContextProps } from '@menu/contexts/verticalNavContext'
 // Component Imports
 import MaterioLogo from '@core/svg/Logo'
 
-// Config Imports
-import themeConfig from '@configs/themeConfig'
-
-// Type Imports
-import type { Mode } from '@core/types'
-
 // Hook Imports
 import useVerticalNav from '@menu/hooks/useVerticalNav'
 import { useSettings } from '@core/hooks/useSettings'
@@ -53,6 +47,7 @@ const LogoText = styled.span<LogoTextProps>`
 
 const Logo = (props: Props) => {
   const { color } = props
+
   // Refs
   const logoTextRef = useRef<HTMLSpanElement>(null)
 

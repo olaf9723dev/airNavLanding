@@ -19,4 +19,5 @@ const AirPlanes = (props: SVGAttributes<SVGElement>) => {
     </svg>
   )
 }
+
 export default AirPlanes

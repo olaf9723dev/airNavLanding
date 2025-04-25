@@ -6,21 +6,15 @@ import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import Divider from '@mui/material/Divider'
-// Third-party Imports
-import classnames from 'classnames'
 
 // Hook Imports
 import { useIntersection } from '@/hooks/useIntersection'
-
-// Styles Imports
-import styles from './styles.module.css'
-import frontCommonStyles from '@views/front-pages/styles.module.css'
 
 import Lines from '@assets/svg/front-pages/landing-page/Lines'
 import Money from '@/assets/svg/front-pages/landing-page/Money'
 import Pilot from '@/assets/svg/front-pages/landing-page/Pilot'
 import Affiliate from '@/assets/svg/front-pages/landing-page/Affiliate'
+
 const Revenue = () => {
   // Refs
   const skipIntersection = useRef(true)

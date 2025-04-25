@@ -7,7 +7,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 // MUI Imports
-import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
@@ -21,7 +20,6 @@ import type { Mode } from '@core/types'
 
 // Component Imports
 import Logo from '@components/layout/shared/Logo'
-import ModeDropdown from '@components/layout/shared/ModeDropdown'
 import FrontMenu from './FrontMenu'
 
 // Util Imports
@@ -42,6 +40,7 @@ const Header = ({ mode }: { mode: Mode }) => {
     threshold: 0,
     disableHysteresis: true
   })
+
   return (
     <header className={classnames(frontLayoutClasses.header, styles.header)}>
       <div className={classnames(frontLayoutClasses.navbar, styles.navbar, { [styles.headerScrolled]: trigger })}>

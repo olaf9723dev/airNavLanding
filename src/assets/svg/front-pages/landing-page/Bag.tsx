@@ -11,4 +11,5 @@ const Bag = (props: SVGAttributes<SVGElement>) => {
     </svg>
   )
 }
+
 export default Bag

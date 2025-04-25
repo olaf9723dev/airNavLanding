@@ -1,17 +1,22 @@
 // React Imports
 import { useEffect, useRef } from 'react'
+
 // MUI Imports
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Accordion from '@mui/material/Accordion'
 import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
+
 // Third-party Imports
 import classnames from 'classnames'
+
 // Hook Imports
 import { useIntersection } from '@/hooks/useIntersection'
+
 // Styles Imports
 import frontCommonStyles from '@views/front-pages/styles.module.css'
+
 // SVG Imports
 import Lines from '@assets/svg/front-pages/landing-page/Lines'
 
@@ -121,4 +126,5 @@ const Features = () => {
     </section>
   )
 }
+
 export default Features

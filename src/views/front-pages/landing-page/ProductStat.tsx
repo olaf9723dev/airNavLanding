@@ -89,6 +89,7 @@ const statData2026: StatData[] = [
     isHover: false
   }
 ]
+
 // Data
 const statData2027: StatData[] = [
   {

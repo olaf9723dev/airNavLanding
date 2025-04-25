@@ -67,4 +67,5 @@ const Money = (props: SVGAttributes<SVGElement>) => {
     </svg>
   )
 }
+
 export default Money

@@ -13,4 +13,5 @@ const Affiliate = (props: SVGAttributes<SVGElement>) => {
     </svg>
   )
 }
+
 export default Affiliate

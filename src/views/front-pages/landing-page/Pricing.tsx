@@ -1,16 +1,8 @@
-// React Imports
-import { useState } from 'react'
-
-// Next Imports
-import Link from 'next/link'
-
 // MUI Imports
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import Slider from '@mui/material/Slider'
-import Chip from '@mui/material/Chip'
 import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
 
@@ -24,7 +16,6 @@ import frontCommonStyles from '@views/front-pages/styles.module.css'
 import Lines from '@assets/svg/front-pages/landing-page/Lines'
 import Curve from '@assets/svg/front-pages/landing-page/Curve'
 import Arrow from '@assets/svg/front-pages/landing-page/Arrow'
-import ElementTwo from '@/assets/svg/front-pages/landing-page/ElementTwo'
 
 const pricingPlans = [
   {
@@ -44,13 +35,6 @@ const pricingPlans = [
 ]
 
 const PricingPlan = () => {
-  // States
-  const [val, setVal] = useState<number>(458)
-
-  const handleChange = (_: Event, newValue: number | number[]) => {
-    setVal(newValue as number)
-  }
-
   return (
     <section
       id='pricing-plans'
@@ -111,13 +95,7 @@ const PricingPlan = () => {
                       </div>
                     </div>
                   </div>
-                  <Button
-                    // component={Link}
-                    // href='/front-pages/payment'
-                    variant={plan.current ? 'contained' : 'outlined'}
-                  >
-                    Get Started
-                  </Button>
+                  <Button variant={plan.current ? 'contained' : 'outlined'}>Get Started</Button>
                 </CardContent>
               </Card>
             </Grid>
